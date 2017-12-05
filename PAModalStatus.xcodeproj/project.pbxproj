@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FBEF641F1FD6C90100FE38F2 /* PAModalStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = FBEF641D1FD6C90100FE38F2 /* PAModalStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBEF64261FD6CCEE00FE38F2 /* PAModalStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEF64251FD6CCEE00FE38F2 /* PAModalStatusView.swift */; };
+		FBEF64281FD6CD1400FE38F2 /* PAModalStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEF64271FD6CD1400FE38F2 /* PAModalStatusView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBEF641A1FD6C90100FE38F2 /* PAModalStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PAModalStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBEF641D1FD6C90100FE38F2 /* PAModalStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAModalStatus.h; sourceTree = "<group>"; };
 		FBEF641E1FD6C90100FE38F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEF64251FD6CCEE00FE38F2 /* PAModalStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAModalStatusView.swift; sourceTree = "<group>"; };
+		FBEF64271FD6CD1400FE38F2 /* PAModalStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PAModalStatusView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				FBEF641D1FD6C90100FE38F2 /* PAModalStatus.h */,
 				FBEF641E1FD6C90100FE38F2 /* Info.plist */,
+				FBEF64251FD6CCEE00FE38F2 /* PAModalStatusView.swift */,
+				FBEF64271FD6CD1400FE38F2 /* PAModalStatusView.xib */,
 			);
 			path = PAModalStatus;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					FBEF64191FD6C90000FE38F2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEF64281FD6CD1400FE38F2 /* PAModalStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEF64261FD6CCEE00FE38F2 /* PAModalStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		FBEF64231FD6C90100FE38F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.peterahlgren.PAModalStatus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		FBEF64241FD6C90100FE38F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
